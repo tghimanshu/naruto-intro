@@ -19,7 +19,7 @@ jobs:
 
       - name: Install and build
         working-directory: ./
-        run: npm install && npm run gh-build && cp dist/anime_dashboard/index.html dist/anime_dashboard/404.html
+        run: npm install && npm run gh-build && cp dist/naruto-intro/index.html dist/naruto-intro/404.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
