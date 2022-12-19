@@ -5,6 +5,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.v-none {
+  opacity: 0;
+}
 .left {
   background-color: #8b3125;
 }
