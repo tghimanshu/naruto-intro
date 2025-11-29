@@ -1,27 +1,68 @@
-# NarutoIntro
+# Naruto Intro Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Welcome to the **Naruto Intro** project! This repository contains a starter Angular application intended to serve as an introduction to the world of Naruto (and Angular development).
 
-## Development server
+## 🎯 Purpose
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The goal of this project is to provide a clean, documented starting point for building a web application focused on Naruto content. Currently, it serves as "Phase 1" - a foundational setup ready for feature expansion.
 
-## Code scaffolding
+## 🛠️ Setup & Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow these steps to get the project running on your local machine:
 
-## Build
+1.  **Prerequisites**: Ensure you have [Node.js](https://nodejs.org/) installed.
+2.  **Clone the repository**:
+    ```bash
+    git clone <repository-url>
+    cd naruto-intro
+    ```
+3.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Usage
 
-## Running unit tests
+### Development Server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run the development server to see the app in action:
 
-## Running end-to-end tests
+```bash
+npm start
+# OR
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Further help
+### Build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To build the project for production:
+
+```bash
+npm run build
+# OR
+ng build
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+### Running Tests
+
+To execute unit tests:
+
+```bash
+npm test
+# OR
+ng test
+```
+
+## 📂 Project Structure
+
+*   `src/`: Contains the source code.
+    *   `app/`: The main application logic and components.
+    *   `main.ts`: The entry point of the application.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check the `FUTURE_PLANS.md` file for upcoming features and ideas.
