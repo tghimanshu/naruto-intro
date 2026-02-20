@@ -1,15 +1,18 @@
 <div class="main">
-  <div class="left">
+  <div class="left" style="background-color: {{ character.primaryColor }}">
     <img src="assets/logo.png" width="100" alt="logo" class="logo" />
     <h2 class="team-no">Team 7</h2>
-    <h2 class="jp-kanji">うずまき<br />ナルト</h2>
+    <h2 class="jp-kanji">
+      {{ character.lastNameKanji }}<br />{{ character.firstNameKanji }}
+    </h2>
   </div>
   <div class="right">
     <div class="hamburger-menu"><span></span><span></span><span></span></div>
     <p class="character-description">
-      Naruto Uzumaki is a titular protagonist of the series . He waws the first
-      character created by Kishimoto during the conception of the series and was
-      designed with many traits from other shonen characters.
+      {{ character.introduction }}
+      <!-- Naruto Uzumaki is a titular protagonist of the series . He waws the first -->
+      <!-- character created by Kishimoto during the conception of the series and was -->
+      <!-- designed with many traits from other shonen characters. -->
     </p>
     <div class="next-nav">
       <p class="next">NEXT</p>
@@ -18,17 +21,22 @@
   </div>
 </div>
 <div class="title-container">
-  <div class="title">
-    <h2>UZUMAKI</h2>
-    <h1>NARUTO</h1>
+  <div class="title" style="background: linear-gradient(to right, #fff 0% 50%, {{
+      character.primaryColor
+    }} 50% 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    ">
+    <h2>{{ character.lastName }}</h2>
+    <h1>{{ character.firstName }}</h1>
   </div>
   <div class="title-outline">
     <h2 class="v-none">UZUMAKI</h2>
-    <h1><span class="v-none"> NA </span>RU <span class="v-none">TO</span></h1>
+    <h1>
+      <span class="v-none"> {{ character.splits[0] }} </span>{{ character.splits[1] }}
+      <span class="v-none">{{ character.splits[2] }}</span>
+    </h1>
   </div>
-  <img
-    src="assets/naruto-sage-mode.png"
-    alt="Naruto Uzumaki"
-    class="character-img"
-  />
+  <img src="{{ character.imageUri }}" alt="Naruto Uzumaki" class="character-img" />
 </div>
