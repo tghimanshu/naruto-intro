@@ -10,6 +10,7 @@ export type Character = {
   imageUri: string;
   primaryColor: string;
   teamNumber: number;
+  next: string
 };
 
 @Injectable({
@@ -33,6 +34,7 @@ export class CharacterService {
       imageUri: 'assets/naruto-sage-mode.png',
       primaryColor: '#8b3125',
       teamNumber: 7,
+      next: 'UCHIHA SASUKE',
     },
     {
       firstName: 'SASUKE',
@@ -45,7 +47,34 @@ export class CharacterService {
       imageUri: 'assets/sasuke-uchiha.png',
       primaryColor: '#1e336a',
       teamNumber: 7,
+      next: 'HARUNO SAKURA',
     },
+    {
+      firstName: 'SAKURA',
+      lastName: 'HARUNO',
+      splits: ['SA', 'KU', 'RA'],
+      firstNameKanji: 'サクラ',
+      lastNameKanji: 'はるの',
+      introduction:
+        'Sakura Haruno is one of the main characters in the Naruto series. She is a member of Team 7, which consists of Naruto Uzumaki, Sasuke Uchiha, and their sensei, Kakashi Hatake. Sakura is initially portrayed as a somewhat insecure and self-conscious character, but she undergoes significant growth and development throughout the series.',
+      imageUri: 'assets/sakura-haruno.png',
+      primaryColor: '#e91e63',
+      teamNumber: 7,
+      next: 'HATAKE KAKASHI',
+    },
+    {
+      firstName: 'KAKASHI',
+      lastName: 'HATAKE',
+      splits: ['KA', 'KA', 'SHI'],
+      firstNameKanji: 'カカシ',
+      lastNameKanji: 'はたけ',
+      introduction:
+        'Kakashi Hatake is a prominent character in the Naruto series. He is a skilled ninja and serves as the leader of Team 7, which consists of Naruto Uzumaki, Sasuke Uchiha, and Sakura Haruno. Kakashi is known for his calm and laid-back demeanor, as well as his exceptional combat skills and intelligence.',
+      imageUri: 'assets/kakashi-hatake.png',
+      primaryColor: '#9e9e9e',
+      teamNumber: 7,
+      next: 'UZUMAKI NARUTO',
+    }
   ];
 
   getCharacter(name: string): Character | undefined {
@@ -53,4 +82,5 @@ export class CharacterService {
       (character) => character.firstName.toLowerCase() === name.toLowerCase(),
     );
   }
+
 }

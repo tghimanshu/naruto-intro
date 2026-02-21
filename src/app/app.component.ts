@@ -15,7 +15,14 @@ import { Character, CharacterService } from './services/character.service';
 export class AppComponent {
   character?: Character;
 
-  constructor(characterService: CharacterService) {
+  constructor(public characterService: CharacterService) {
     this.character = characterService.getCharacter('naruto');
+  }
+
+  nextCharacter(): void {
+    if (!this.character) return;
+    console.log(this.character.next.split(' ')[1].toLowerCase());
+
+    this.character = this.characterService.getCharacter(this.character.next.split(' ')[1].toLowerCase());
   }
 }

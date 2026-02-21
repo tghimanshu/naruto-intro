@@ -140,6 +140,8 @@ h1 {
   position: absolute;
   bottom: 10%;
   right: 15%;
+  z-index: 2;
+  cursor: pointer;
 }
 .next-nav p {
   font-family: "Courier New", Courier, monospace;
