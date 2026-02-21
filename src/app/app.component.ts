@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character, CharacterService } from './services/character.service';
 
 /**
  * The root component of the application.
@@ -9,14 +10,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  /**
-   * The title of the application.
-   *
-   * @remarks
-   * This property is bound to the template and displays the application's name.
-   */
-  title = 'naruto-intro';
+  character?: Character;
+
+  constructor(public characterService: CharacterService) {
+    this.character = characterService.getCharacter('naruto');
+  }
+
+  nextCharacter(): void {
+    if (!this.character) return;
+    console.log(this.character.next.split(' ')[1].toLowerCase());
+
+    this.character = this.characterService.getCharacter(this.character.next.split(' ')[1].toLowerCase());
+  }
 }

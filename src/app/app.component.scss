@@ -9,7 +9,7 @@
   opacity: 0;
 }
 .left {
-  background-color: #8b3125;
+  /* background-color: #8b3125; */
   position: relative;
 }
 
@@ -60,7 +60,7 @@
   color: white;
 }
 .title {
-  background: linear-gradient(to right, #fff 0 50%, #8b3125 50% 100%);
+  /* background: linear-gradient(to right, #fff 0 50%, #8b3125 50% 100%); */
   background-clip: text;
   -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
@@ -130,6 +130,7 @@ h1 {
   font-size: 1rem;
   width: 60%;
   position: absolute;
+  text-align: justify;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -139,6 +140,8 @@ h1 {
   position: absolute;
   bottom: 10%;
   right: 15%;
+  z-index: 2;
+  cursor: pointer;
 }
 .next-nav p {
   font-family: "Courier New", Courier, monospace;
