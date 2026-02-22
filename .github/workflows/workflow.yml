@@ -17,6 +17,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Test
+        working-directory: ./
+        run: npm install && npm run test
+
       - name: Install and build
         working-directory: ./
         run: npm install && npm run gh-build && cp dist/naruto-intro/index.html dist/naruto-intro/404.html
