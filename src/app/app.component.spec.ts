@@ -16,16 +16,35 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'naruto-intro'`, () => {
+  it('should have the character initialized', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('naruto-intro');
+    expect(app.character).toBeDefined();
+  });
+  it('should have the character initialized', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.character?.firstName).toBe('NARUTO');
   });
 
-  it('should render title', () => {
+  it('should update the character on next'), () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('naruto-intro app is running!');
-  });
+    const app = fixture.componentInstance;
+    app.nextCharacter();
+
+    expect(app.character!.firstName).toBe('SASUKE');
+  }
+  it('check the character changing'), () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+
+    app.nextCharacter();
+    expect(app.character?.firstName).toBe('SASUKE');
+    app.nextCharacter();
+    expect(app.character?.firstName).toBe('SAKURA');
+    app.nextCharacter();
+    expect(app.character?.firstName).toBe('KAKASHI');
+    app.nextCharacter();
+    expect(app.character?.firstName).toBe('NARUTO');
+  }
 });
