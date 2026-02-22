@@ -11,7 +11,7 @@ The goal of this project is to get inspired by design and learn to recreate it u
 ![Naruto Uzumaki](public/naruto.jpeg)
 ![Sasuke Uchiha](public/sasuke.jpeg)
 ![Sakura Haruno](public/sakura.jpeg)
-![Kakashi Hatake](public/Kakashi.jpeg)
+![Kakashi Hatake](public/kakashi.jpeg)
 
 ## 🛠️ Setup & Installation
 
