@@ -1,10 +1,17 @@
-# Naruto Intro Project
+# Naruto Intro
 
-Welcome to the **Naruto Intro** project! This repository contains a starter Angular application intended to serve as an introduction to the world of Naruto (and Angular development).
+Website Design inspired by the [Dribbble Design](https://dribbble.com/shots/15108926-Naruto-Web-Concept)
 
 ## 🎯 Purpose
 
-The goal of this project is to provide a clean, documented starting point for building a web application focused on Naruto content. Currently, it serves as "Phase 1" - a foundational setup ready for feature expansion.
+The goal of this project is to get inspired by design and learn to recreate it using Web Technologies.
+
+## 📸 Screenshots
+
+![Naruto Uzumaki](public/naruto.jpeg)
+![Sasuke Uchiha](public/sasuke.jpeg)
+![Sakura Haruno](public/sakura.jpeg)
+![Kakashi Hatake](public/Kakashi.jpeg)
 
 ## 🛠️ Setup & Installation
 
@@ -56,13 +63,3 @@ npm test
 # OR
 ng test
 ```
-
-## 📂 Project Structure
-
-*   `src/`: Contains the source code.
-    *   `app/`: The main application logic and components.
-    *   `main.ts`: The entry point of the application.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please check the `FUTURE_PLANS.md` file for upcoming features and ideas.
