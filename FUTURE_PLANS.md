@@ -6,33 +6,22 @@ This document outlines the roadmap for the **Naruto Intro** project. Phase 1 (Fo
 
 The primary goal of Phase 2 is to transform the empty shell into a rich information source about Naruto.
 
-### 1. Character Database
-*   **Feature**: A list of main characters (Naruto, Sasuke, Sakura, Kakashi).
-*   **Details**:
-    *   Create a `Character` interface/model.
-    *   Create a `CharacterService` to fetch character data (mock data initially).
-    *   Create a `CharacterListComponent` to display cards for each character.
-    *   Create a `CharacterDetailComponent` for in-depth info.
+### 1. Add Animations
 
-### 2. Jutsu Encyclopedia
-*   **Feature**: A catalog of Jutsus (techniques).
-*   **Details**:
-    *   Categorize by type (Ninjutsu, Genjutsu, Taijutsu).
-    *   Search/Filter functionality.
+- **Feature**: Introduce Angular Animations for a more dynamic user experience.
+- **Details**:
+  - Animate page transitions.
+  - Add hover effects or particle effects
 
-### 3. Village Guide
-*   **Feature**: Information about the Hidden Villages.
-*   **Details**:
-    *   Interactive map or list of villages (Konoha, Suna, etc.).
-    *   Symbols and Kage information.
+### 2. Dark Mode
 
-## Phase 3: Interactivity & Advanced Features
+- **Feature**: Add a Dark Mode toggle for better accessibility and user preference.
+- **Details**:
+  - Use Angular's theming capabilities to switch between light and dark themes.
+  - Ensure all components are styled appropriately for both modes.
 
-*   **Quiz Module**: Test your Naruto knowledge.
-*   **API Integration**: Connect to a real Naruto API (if available) or build a backend.
-*   **State Management**: Introduce NgRx or Akita if the app grows complex.
+### 3. Possible Add New Teams
 
-## Phase 4: UI/UX Polish
-
-*   **Theming**: Add a dark mode or village-specific themes.
-*   **Animations**: Use Angular Animations for page transitions and jutsu effects.
+- **Feature**: Introduct New Teams (Team 10, etc.) with their members.
+- **Details**:
+  - Add new characters and their details to the existing structure.
